@@ -7,8 +7,13 @@ Today I will show you how to deploy your discord bot to heroku
 First of all let's make sure our server is running
 Now we need to make a github repository
 Push the code to github
-Now let's create our heroku app
+Now let's create our heroku app ( make sure you are logged in on heroku and your app name is lowercase )
 We can connect our github repo to heroku either via  heroku cli or much simpler by connecting directly to github
+I will use the github connection method
+Copy your repo name : https://github.com/Mxk01/YT-bot-deploy  E.g here it is  YT-bot-deploy
+Click connect
+
 Click deploy branch
 Now let's create a procfile
-This will help heroku run our application  then commit our changes
+Simply create a new file ( no extension and type in  web: node server.js  or whatever your file name is )
+This will help heroku run our application  then commit our changes ( after making the procfile ) 

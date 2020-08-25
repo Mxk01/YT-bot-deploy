@@ -126,5 +126,5 @@ if (message.content.startsWith(`${process.env.PREFIX}unbanall`)) {
 
 // For the token we're using an environment variable
 client.login(process.env.BOT_TOKEN); // A  token is something we'll be using to login the bot to discord
-app.listen(port,()=>console.log('Listening to the server'));
+// app.listen(port,()=>console.log('Listening to the server'));
 // That's all guys for now.Hope you had fun.If you liked this video don't forget to like & share & subscribe;

@@ -8,6 +8,8 @@ let client = new Discord.Client(); // Creating our client
 let fetch = require('node-fetch');
 let randomPuppy = require('random-puppy');
 dotenv.config();
+var distDir = __dirname + "/dist/";
+
 // When bot is connected  log this message;
 // client.once('ready',()=>{
 //   console.log('Hello people');
@@ -37,6 +39,8 @@ client.on('message',async(message)=>{
     }
 
     }
+    app.use(express.static(distDir));
+
 
   if(message.content.startsWith(`${process.env.PREFIX}meme`)){
 try{
@@ -126,5 +130,5 @@ if (message.content.startsWith(`${process.env.PREFIX}unbanall`)) {
 
 // For the token we're using an environment variable
 client.login(process.env.BOT_TOKEN); // A  token is something we'll be using to login the bot to discord
-// app.listen(port,()=>console.log('Listening to the server'));
+ app.listen(port,()=>console.log('Listening to the server'));
 // That's all guys for now.Hope you had fun.If you liked this video don't forget to like & share & subscribe;
